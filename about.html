@@ -4,7 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>University Website Design</title>
+    <title>University Website Design — About Us</title>
+    <meta name="description"
+        content="Learn about our university's global reach, diverse learning opportunities, and commitment to accessible, high-quality education." />
+    <meta property="og:title" content="About Us — University Website Design" />
+    <meta property="og:description"
+        content="The world's largest university, connecting students worldwide through innovation and academic excellence." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -16,9 +23,9 @@
 </head>
 
 <body>
-    <section class="sub-header">
+    <header class="sub-header">
         <nav>
-            <a href="index.html"><img src="images/logo.png" alt="University website"></a>
+            <a href="index.html"><img src="images/logo.png" alt="University home"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times"></i>
                 <ul>
@@ -34,49 +41,65 @@
         </nav>
 
         <h1>About Us</h1>
-    </section>
+    </header>
 
-    <!---------------About us content----------------->
-    <section class="about-us">
-        <div class="row">
-            <div class="about-col">
-                <h1>We are the world's largest university</h1>
-                <p>A bold statement reflecting global reach and
-                    impact, emphasizing unmatched scale, diverse
-                    learning opportunities, and a commitment to
-                    accessible education that connects students
-                    worldwide through innovation, knowledge,
-                    and academic excellence.
-                </p>
-                <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+    <main>
+        <!---------------About us content----------------->
+        <section class="about-us">
+            <div class="row">
+                <div class="about-col">
+                    <h1>We are the world's largest university</h1>
+                    <p>A bold statement reflecting global reach and
+                        impact, emphasizing unmatched scale, diverse
+                        learning opportunities, and a commitment to
+                        accessible education that connects students
+                        worldwide through innovation, knowledge,
+                        and academic excellence.
+                    </p>
+                    <a href="course.html" class="hero-btn red-btn">EXPLORE NOW</a>
+                </div>
+                <div class="about-col">
+                    <img src="images/about.jpg" alt="Students on campus">
+                </div>
             </div>
-            <div class="about-col">
-                <img src="images/about.jpg">
-            </div>
-        </div>
-    </section>
-
-
-
+        </section>
+    </main>
 
 
     <!---------------Footer---------------------------->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>Take the next step toward your future by joining
-            our university today. Apply now to access quality
-            education, <br />expert guidance, and opportunities
-            that will shape your career and unlock your full
-            potential.
-        </p>
-        <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-linkedin"></i>
-            <i class="fa fa-tiktok"></i>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>Take the next step toward your future by joining our university today. Apply now to access quality
+                    education, expert guidance, and opportunities that will shape your career.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="course.html">Courses</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Lubiri Ring Road, Opp Kabaka njagala, Kampala Rubaga Division</p>
+                <p>+256-787-760-797</p>
+                <p>contact@miirosadat.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <i class="fa fa-facebook" role="link" aria-label="Facebook" tabindex="0"></i>
+                    <i class="fa fa-instagram" role="link" aria-label="Instagram" tabindex="0"></i>
+                    <i class="fa fa-linkedin" role="link" aria-label="LinkedIn" tabindex="0"></i>
+                    <i class="fa fa-tiktok" role="link" aria-label="TikTok" tabindex="0"></i>
+                </div>
+            </div>
         </div>
-        <p>Best Private University</p>
-    </section>
+        <p class="footer-bottom">Best Private University</p>
+    </footer>
 
     <script src="scripts/main.js"></script>
 </body>

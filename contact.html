@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>University Website Design</title>
+    <title>University Website Design — Contact Us</title>
+    <meta name="description"
+        content="Get in touch with our admissions team — visit our Kampala campus, call us, or send a message anytime." />
+    <meta property="og:title" content="Contact Us — University Website Design" />
+    <meta property="og:description" content="Reach our admissions team by phone, email, or in person in Kampala." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -17,9 +23,9 @@
 </head>
 
 <body>
-    <section class="sub-header">
+    <header class="sub-header">
         <nav>
-            <a href="index.html"><img src="images/logo.png" alt="University website"></a>
+            <a href="index.html"><img src="images/logo.png" alt="University home"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times"></i>
                 <ul>
@@ -35,75 +41,115 @@
         </nav>
 
         <h1>Contact Us</h1>
-    </section>
+    </header>
 
-    <!---------------Contact us content----------------->
-    <section class="location">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53966514.09388339!2d142.10784155!3d34.354177899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6af15fca2a2a640f%3A0x2b6b6dcf1a617992!2sMIIRO%20SADAT!5e0!3m2!1sen!2sug!4v1777720180828!5m2!1sen!2sug"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+    <main>
+        <!---------------Contact us content----------------->
+        <section class="location">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53966514.09388339!2d142.10784155!3d34.354177899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6af15fca2a2a640f%3A0x2b6b6dcf1a617992!2sMIIRO%20SADAT!5e0!3m2!1sen!2sug!4v1777720180828!5m2!1sen!2sug"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" title="University campus location map"></iframe>
+        </section>
 
 
-    <section class="contact-us">
-        <div class="row">
-            <div class="contact-col">
-                <div>
-                    <i class="fa fa-home"></i>
-                    <span>
-                        <h5>Lubiri Ring Road, Opp Kabaka njagala</h5>
-                        <p>Kampala Rubaga Division</p>
-                    </span>
+        <section class="contact-us">
+            <div class="row">
+                <div class="contact-col info-card">
+                    <div>
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span>
+                            <h5>Lubiri Ring Road, Opp Kabaka njagala</h5>
+                            <p>Kampala Rubaga Division</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <span>
+                            <h5>+256-787-760-797</h5>
+                            <p>Monday to Sunday, 24 hours</p>
+                        </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <span>
+                            <h5>contact@miirosadat.com</h5>
+                            <p>Email me your query</p>
+                        </span>
+                    </div>
                 </div>
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <span>
-                        <h5>+256-787-760-797</h5>
-                        <p>Monday to Sunday, 24 hours</p>
-                    </span>
-                </div>
-                <div>
-                    <i class="fa fa-envelope-o"></i>
-                    <span>
-                        <h5>contact@miirosadat.com</h5>
-                        <p>Email me your query</p>
-                    </span>
+
+
+                <div class="contact-col">
+                    <div id="formStatus" class="form-message"
+                        data-success="Thanks! Your message has been sent — we'll get back to you soon."
+                        data-error="Something went wrong. Please check your details and try again." hidden></div>
+
+                    <form class="contact-form" action="form-handler.php" method="post" novalidate>
+                        <input type="hidden" name="redirect" value="contact.html">
+                        <div class="hp-field" aria-hidden="true">
+                            <label for="contactWebsite">Leave this field empty</label>
+                            <input type="text" id="contactWebsite" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                            <span class="field-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Enter your Email" required>
+                            <span class="field-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Enter your subject" required>
+                            <span class="field-error"></span>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                            <span class="field-error"></span>
+                        </div>
+                        <button type="submit" class="hero-btn red-btn">Send Message</button>
+                    </form>
+
                 </div>
             </div>
-
-
-            <div class="contact-col">
-                <form action="form-handler.php" method="post">
-                    <input type="text" name="name" placeholder="Enter your name" required>
-                    <input type="email" name="email" placeholder="Enter your Email" required>
-                    <input type="text" name="subject" placeholder="Enter your subject" required>
-                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
-                    <button type="submit" class="hero-btn red-btn">Send Message</button>
-                </form>
-
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
 
     <!---------------Footer---------------------------->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>Take the next step toward your future by joining
-            our university today. Apply now to access quality
-            education, <br />expert guidance, and opportunities
-            that will shape your career and unlock your full
-            potential.
-        </p>
-        <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-linkedin"></i>
-            <i class="fa fa-tiktok"></i>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>Take the next step toward your future by joining our university today. Apply now to access quality
+                    education, expert guidance, and opportunities that will shape your career.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="course.html">Courses</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Lubiri Ring Road, Opp Kabaka njagala, Kampala Rubaga Division</p>
+                <p>+256-787-760-797</p>
+                <p>contact@miirosadat.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <i class="fa fa-facebook" role="link" aria-label="Facebook" tabindex="0"></i>
+                    <i class="fa fa-instagram" role="link" aria-label="Instagram" tabindex="0"></i>
+                    <i class="fa fa-linkedin" role="link" aria-label="LinkedIn" tabindex="0"></i>
+                    <i class="fa fa-tiktok" role="link" aria-label="TikTok" tabindex="0"></i>
+                </div>
+            </div>
         </div>
-        <p>Best Private University</p>
-    </section>
+        <p class="footer-bottom">Best Private University</p>
+    </footer>
 
     <script src="scripts/main.js"></script>
 </body>

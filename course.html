@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>University Website Design</title>
+    <title>University Website Design — Courses</title>
+    <meta name="description"
+        content="Browse accredited Technology, Business, and Health programs designed to build practical, career-ready skills." />
+    <meta property="og:title" content="Courses — University Website Design" />
+    <meta property="og:description" content="Accredited programs in Technology, Business, and Health." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -16,9 +22,9 @@
 </head>
 
 <body>
-    <section class="sub-header">
+    <header class="sub-header">
         <nav>
-            <a href="index.html"><img src="images/logo.png" alt="University website"></a>
+            <a href="index.html"><img src="images/logo.png" alt="University home"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times"></i>
                 <ul>
@@ -34,94 +40,113 @@
         </nav>
 
         <h1>Our Courses</h1>
-    </section>
+    </header>
 
-    <!---------------Course content----------------->
+    <main>
+        <!---------------Course content----------------->
 
-    <section class="course">
-        <h1>Courses We Offer</h1>
-        <p>Explore a wide range of accredited programs designed to
-            equip students with practical skills, knowledge, and
-            career-ready expertise across diverse disciplines.
-        </p>
+        <section class="course">
+            <h1>Courses We Offer</h1>
+            <p>Explore a wide range of accredited programs designed to
+                equip students with practical skills, knowledge, and
+                career-ready expertise across diverse disciplines.
+            </p>
 
-        <div class="row">
-            <div class="course-col">
-                <h3>Technology</h3>
-                <p>Learn programming, web development, and system design
-                    skills to build modern digital solutions, applications,
-                    and scalable platforms for real world challenges.</p>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Technology</h3>
+                    <p>Learn programming, web development, and system design
+                        skills to build modern digital solutions, applications,
+                        and scalable platforms for real world challenges.</p>
+                </div>
+
+                <div class="course-col">
+                    <h3>Business</h3>
+                    <p>Understand management, finance, and marketing principles
+                        while developing leadership, strategic thinking, and
+                        entrepreneurial skills needed to succeed in competitive
+                        global markets.</p>
+                </div>
+
+                <div class="course-col">
+                    <h3>Health</h3>
+                    <p>Study human health, patient care, and medical fundamentals while gaining practical knowledge to
+                        support wellness, prevention, and effective healthcare service delivery systems.</p>
+                </div>
             </div>
+        </section>
 
-            <div class="course-col">
-                <h3>Business</h3>
-                <p>Understand management, finance, and marketing principles
-                    while developing leadership, strategic thinking, and
-                    entrepreneurial skills needed to succeed in competitive
-                    global markets.</p>
+        <!----------------Facilities-------------------->
+        <section class="facilities">
+            <h1>Our facilities</h1>
+            <p>We are the leading university with modern facilities</p>
+
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/library.png" alt="University library interior">
+                    <h3>World Class Library</h3>
+                    <p>Access an extensive collection of academic resources,
+                        digital databases, and quiet study spaces designed to
+                        support research, learning, and intellectual growth.
+                    </p>
+                </div>
+
+                <div class="facilities-col">
+                    <img src="images/basketball.png" alt="Campus basketball court">
+                    <h3>Largest Play Ground</h3>
+                    <p>Enjoy expansive playground facilities designed for sports,
+                        recreation, and student engagement, promoting physical
+                        fitness, teamwork, and a balanced, healthy campus lifestyle.
+
+                    </p>
+                </div>
+
+                <div class="facilities-col">
+                    <img src="images/cafeteria.png" alt="Campus cafeteria">
+                    <h3>Tasty and Healthy Foods</h3>
+                    <p>Savor nutritious, delicious meals prepared with fresh ingredients,
+                        offering balanced options that support student health,
+                        energy, and overall wellbeing throughout campus life.
+                    </p>
+                </div>
             </div>
-
-            <div class="course-col">
-                <h3>Health</h3>
-                <p>Study human health, patient care, and medical fundamentals while gaining practical knowledge to
-                    support wellness, prevention, and effective healthcare service delivery systems.</p>
-            </div>
-        </div>
-    </section>
-
-    <!----------------Facilities-------------------->
-    <section class="facilities">
-        <h1>Our facilities</h1>
-        <p>We are the leading university with modern facilities</p>
-
-        <div class="row">
-            <div class="facilities-col">
-                <img src="images/library.png">
-                <h3>World Class Library</h3>
-                <p>Access an extensive collection of academic resources,
-                    digital databases, and quiet study spaces designed to
-                    support research, learning, and intellectual growth.
-                </p>
-            </div>
-
-            <div class="facilities-col">
-                <img src="images/basketball.png">
-                <h3>Largest Play Ground</h3>
-                <p>Enjoy expansive playground facilities designed for sports,
-                    recreation, and student engagement, promoting physical
-                    fitness, teamwork, and a balanced, healthy campus lifestyle.
-
-                </p>
-            </div>
-
-            <div class="facilities-col">
-                <img src="images/cafeteria.png">
-                <h3>Tasty and Healthy Foods</h3>
-                <p>Savor nutritious, delicious meals prepared with fresh ingredients,
-                    offering balanced options that support student health,
-                    energy, and overall wellbeing throughout campus life.
-                </p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!---------------Footer---------------------------->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>Take the next step toward your future by joining
-            our university today. Apply now to access quality
-            education, <br />expert guidance, and opportunities
-            that will shape your career and unlock your full
-            potential.
-        </p>
-        <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-linkedin"></i>
-            <i class="fa fa-tiktok"></i>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>Take the next step toward your future by joining our university today. Apply now to access quality
+                    education, expert guidance, and opportunities that will shape your career.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="course.html">Courses</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Lubiri Ring Road, Opp Kabaka njagala, Kampala Rubaga Division</p>
+                <p>+256-787-760-797</p>
+                <p>contact@miirosadat.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <i class="fa fa-facebook" role="link" aria-label="Facebook" tabindex="0"></i>
+                    <i class="fa fa-instagram" role="link" aria-label="Instagram" tabindex="0"></i>
+                    <i class="fa fa-linkedin" role="link" aria-label="LinkedIn" tabindex="0"></i>
+                    <i class="fa fa-tiktok" role="link" aria-label="TikTok" tabindex="0"></i>
+                </div>
+            </div>
         </div>
-        <p>Best Private University</p>
-    </section>
+        <p class="footer-bottom">Best Private University</p>
+    </footer>
 
     <script src="scripts/main.js"></script>
 </body>

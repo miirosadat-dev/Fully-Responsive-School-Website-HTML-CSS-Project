@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>University Website Design</title>
+    <title>University Website Design — Blog</title>
+    <meta name="description"
+        content="Explore our 2026 certificates and online programs designed to build in-demand skills and advance your career." />
+    <meta property="og:title" content="Certificates & Online Programs — University Website Design" />
+    <meta property="og:description" content="Flexible, expert-led certificate courses and online programs for 2026." />
+    <meta property="og:type" content="article" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
@@ -17,9 +23,9 @@
 </head>
 
 <body>
-    <section class="sub-header">
+    <header class="sub-header">
         <nav>
-            <a href="index.html"><img src="images/logo.png" alt="University website"></a>
+            <a href="index.html"><img src="images/logo.png" alt="University home"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times"></i>
                 <ul>
@@ -35,126 +41,144 @@
         </nav>
 
         <h1>Our Certificates & Online Programs for 2026</h1>
-    </section>
+    </header>
 
-    <!---------------Blog Page content----------------->
-    <section class="blog-content">
-        <div class="row">
-            <div class="blog-left">
-                <img src="images/certificate.jpg">
-                <h2>Our Certificates & Online Programs for 2026</h2>
-                <p>Explore our 2026 certificates and online
-                    programs designed to build in-demand skills,
-                    boost your career, and offer flexible,
-                    expert-led learning you can access anytime,
-                    anywhere.
-                </p>
-                <br>
-                <p>Discover a wide range of 2026 certificate courses and
-                    online programs tailored to meet evolving industry demands.
-                    Whether you're looking to advance your career, switch
-                    fields, or gain new skills, our flexible learning options
-                    are designed to fit your schedule. Learn from experienced
-                    instructors through engaging, practical content that
-                    prepares you for real-world success. With fully online
-                    access, you can study from anywhere while enjoying a
-                    supportive learning experience focused on your growth
-                    and achievement.
-                </p>
+    <main>
+        <!---------------Blog Page content----------------->
+        <section class="blog-content">
+            <div class="row">
+                <div class="blog-left">
+                    <img src="images/certificate.jpg" alt="Student receiving a certificate">
+                    <h2>Our Certificates & Online Programs for 2026</h2>
+                    <p>Explore our 2026 certificates and online
+                        programs designed to build in-demand skills,
+                        boost your career, and offer flexible,
+                        expert-led learning you can access anytime,
+                        anywhere.
+                    </p>
+                    <br>
+                    <p>Discover a wide range of 2026 certificate courses and
+                        online programs tailored to meet evolving industry demands.
+                        Whether you're looking to advance your career, switch
+                        fields, or gain new skills, our flexible learning options
+                        are designed to fit your schedule. Learn from experienced
+                        instructors through engaging, practical content that
+                        prepares you for real-world success. With fully online
+                        access, you can study from anywhere while enjoying a
+                        supportive learning experience focused on your growth
+                        and achievement.
+                    </p>
 
-                <br>
+                    <br>
 
-                <p>In addition, our 2026 programs emphasize hands-on learning,
-                    industry-relevant projects, and continuous assessment to
-                    ensure practical understanding. You’ll gain credentials
-                    that showcase your expertise and enhance your professional
-                    profile. Our supportive community, career guidance
-                    resources, and up-to-date curriculum help you stay
-                    competitive in a rapidly changing job market. Whether
-                    you’re learning part-time or full-time, our programs are
-                    built to deliver value, confidence, and measurable results
-                    every step of the way.
-                </p>
+                    <p>In addition, our 2026 programs emphasize hands-on learning,
+                        industry-relevant projects, and continuous assessment to
+                        ensure practical understanding. You’ll gain credentials
+                        that showcase your expertise and enhance your professional
+                        profile. Our supportive community, career guidance
+                        resources, and up-to-date curriculum help you stay
+                        competitive in a rapidly changing job market. Whether
+                        you’re learning part-time or full-time, our programs are
+                        built to deliver value, confidence, and measurable results
+                        every step of the way.
+                    </p>
 
-                <br>
+                    <br>
 
-                <p>Take the next step toward your goals with our 2026
-                    certificates and online programs. Gain practical skills,
-                    earn recognized credentials, and open new opportunities in
-                    your chosen field. With flexible learning, expert support,
-                    and a focus on real-world outcomes, you’ll be equipped to
-                    succeed in today’s competitive landscape. Start your
-                    journey with confidence and transform your future through
-                    accessible, high-quality online education.
-                </p>
+                    <p>Take the next step toward your goals with our 2026
+                        certificates and online programs. Gain practical skills,
+                        earn recognized credentials, and open new opportunities in
+                        your chosen field. With flexible learning, expert support,
+                        and a focus on real-world outcomes, you’ll be equipped to
+                        succeed in today’s competitive landscape. Start your
+                        journey with confidence and transform your future through
+                        accessible, high-quality online education.
+                    </p>
 
-                <div class="comment-box">
-                    <h3>Leave a comment</h3>
+                    <div class="comment-box">
+                        <h3>Leave a comment</h3>
 
-                    <form action="" class="comment-form">
-                        <input type="text" placeholder="Enter Name">
-                        <input type="email" placeholder="Enter Email">
-                        <textarea rows="5" placeholder="Your Comment"></textarea>
-                        <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
-                    </form>
+                        <div class="form-message" hidden></div>
+
+                        <form class="comment-form" novalidate>
+                            <div class="hp-field" aria-hidden="true">
+                                <label for="commentWebsite">Leave this field empty</label>
+                                <input type="text" id="commentWebsite" name="website" tabindex="-1" autocomplete="off">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="commentName" placeholder="Enter Name" required>
+                                <span class="field-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="commentEmail" placeholder="Enter Email" required>
+                                <span class="field-error"></span>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="commentBody" rows="5" placeholder="Your Comment" required></textarea>
+                                <span class="field-error"></span>
+                            </div>
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        </form>
+                    </div>
+
+
+
+
                 </div>
 
-
-
-
+                <div class="blog-right">
+                    <h3>Post Categories</h3>
+                    <div class="category-pills">
+                        <span class="category-pill"><span>Business Analytics</span><span class="count">21</span></span>
+                        <span class="category-pill"><span>Data Science</span><span class="count">28</span></span>
+                        <span class="category-pill"><span>Machine Learning</span><span class="count">15</span></span>
+                        <span class="category-pill"><span>Computer Science</span><span class="count">31</span></span>
+                        <span class="category-pill"><span>AutoCAD</span><span class="count">48</span></span>
+                        <span class="category-pill"><span>DevOps Engineering</span><span class="count">6</span></span>
+                    </div>
+                </div>
             </div>
-
-            <div class="blog-right">
-                <h3>Post Categories</h3>
-                <div>
-                    <span>Business Analytics</span>
-                    <span>21</span>
-                </div>
-                <div>
-                    <span>Data Science</span>
-                    <span>28</span>
-                </div>
-                <div>
-                    <span>Machine Learning</span>
-                    <span>15</span>
-                </div>
-                <div>
-                    <span>Computer Science</span>
-                    <span>31</span>
-                </div>
-                <div>
-                    <span>AutoCAD</span>
-                    <span>48</span>
-                </div>
-                <div>
-                    <span>DevOps Engineering</span>
-                    <span>6</span>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
 
     <!----------------Facilities-------------------->
 
 
     <!---------------Footer---------------------------->
-    <section class="footer">
-        <h4>About Us</h4>
-        <p>Take the next step toward your future by joining
-            our university today. Apply now to access quality
-            education, <br />expert guidance, and opportunities
-            that will shape your career and unlock your full
-            potential.
-        </p>
-        <div class="icons">
-            <i class="fa fa-facebook"></i>
-            <i class="fa fa-instagram"></i>
-            <i class="fa fa-linkedin"></i>
-            <i class="fa fa-tiktok"></i>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>About Us</h4>
+                <p>Take the next step toward your future by joining our university today. Apply now to access quality
+                    education, expert guidance, and opportunities that will shape your career.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="course.html">Courses</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p>Lubiri Ring Road, Opp Kabaka njagala, Kampala Rubaga Division</p>
+                <p>+256-787-760-797</p>
+                <p>contact@miirosadat.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="icons">
+                    <i class="fa fa-facebook" role="link" aria-label="Facebook" tabindex="0"></i>
+                    <i class="fa fa-instagram" role="link" aria-label="Instagram" tabindex="0"></i>
+                    <i class="fa fa-linkedin" role="link" aria-label="LinkedIn" tabindex="0"></i>
+                    <i class="fa fa-tiktok" role="link" aria-label="TikTok" tabindex="0"></i>
+                </div>
+            </div>
         </div>
-        <p>Best Private University</p>
-    </section>
+        <p class="footer-bottom">Best Private University</p>
+    </footer>
 
     <script src="scripts/main.js"></script>
 </body>
