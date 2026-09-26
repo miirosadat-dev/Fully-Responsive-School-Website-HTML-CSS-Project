@@ -1,33 +1,37 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>University Website Design</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="stylesheet" href="styles/about-us.css">
     <link rel="stylesheet" href="styles/contact.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
-  </head>
-  <body>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+
+<body>
     <section class="sub-header">
         <nav>
             <a href="index.html"><img src="images/logo.png" alt="University website"></a>
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-times"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="course.html">COURSES</a></li>
                     <li><a href="blog.html">BLOG</a></li>
-                    <li><a href="contact.html">CONTACT</a></li
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
 
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fa fa-bars"></i>
         </nav>
 
         <h1>Contact Us</h1>
@@ -35,9 +39,12 @@
 
     <!---------------Contact us content----------------->
     <section class="location">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53966514.09388339!2d142.10784155!3d34.354177899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6af15fca2a2a640f%3A0x2b6b6dcf1a617992!2sMIIRO%20SADAT!5e0!3m2!1sen!2sug!4v1777720180828!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53966514.09388339!2d142.10784155!3d34.354177899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6af15fca2a2a640f%3A0x2b6b6dcf1a617992!2sMIIRO%20SADAT!5e0!3m2!1sen!2sug!4v1777720180828!5m2!1sen!2sug"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    
+
 
     <section class="contact-us">
         <div class="row">
@@ -53,7 +60,7 @@
                     <i class="fa fa-phone"></i>
                     <span>
                         <h5>+256-787-760-797</h5>
-                        <p>Monday to Monday, 24 hours</p>
+                        <p>Monday to Sunday, 24 hours</p>
                     </span>
                 </div>
                 <div>
@@ -83,34 +90,22 @@
     <!---------------Footer---------------------------->
     <section class="footer">
         <h4>About Us</h4>
-        <p>Take the next step toward your future by joining 
+        <p>Take the next step toward your future by joining
             our university today. Apply now to access quality
-             education, <br/>expert guidance, and opportunities
-              that will shape your career and unlock your full
-               potential.
-</p>
+            education, <br />expert guidance, and opportunities
+            that will shape your career and unlock your full
+            potential.
+        </p>
         <div class="icons">
             <i class="fa fa-facebook"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-linkedin"></i>
-                <i class="fa fa-tiktok"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-tiktok"></i>
         </div>
         <p>Best Private University</p>
     </section>
 
+    <script src="scripts/main.js"></script>
+</body>
 
-    <!--------JavaScript for Toggle Menu ------->
-    <script>
-        let navLinks = document.getElementById("navLinks");
-
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
-
-    </script>
-  </body>
 </html>
