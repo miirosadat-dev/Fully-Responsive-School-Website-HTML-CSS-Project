@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
     markActiveNavLink();
 });
 
-/* ----------Mobile navigation------------- */
+/* -------------------------------------------------------
+   Mobile navigation
+   ------------------------------------------------------- */
 function setupNav() {
     const navLinks = document.getElementById("navLinks");
     const openBtn = document.querySelector("nav .fa-bars");
@@ -78,7 +80,9 @@ function markActiveNavLink() {
     });
 }
 
-/* ------Scroll reveal---------- */
+/* -------------------------------------------------------
+   Scroll reveal
+   ------------------------------------------------------- */
 function setupScrollReveal() {
     const targets = document.querySelectorAll(
         ".course-col, .campus-col, .facilities-col, .testimonial-col"
@@ -168,7 +172,9 @@ function setupFormValidation(form, options = {}) {
     });
 }
 
-/*  Post-submit status banner (?status=success / ?status=error) */
+/* -------------------------------------------------------
+   Post-submit status banner (?status=success / ?status=error)
+   ------------------------------------------------------- */
 function showFormStatusFromUrl() {
     const box = document.getElementById("formStatus");
     if (!box) return;

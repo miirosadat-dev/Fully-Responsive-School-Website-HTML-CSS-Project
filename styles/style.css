@@ -610,17 +610,6 @@ nav .fa {
   padding: 0;
 }
 
-/* Honeypot spam trap — hidden from real users, visible to bots that
-   fill in every field programmatically */
-.hp-field {
-  position: absolute;
-  left: -9999px;
-  top: -9999px;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
 .form-message {
   max-width: 600px;
   margin: 0 auto 24px;
