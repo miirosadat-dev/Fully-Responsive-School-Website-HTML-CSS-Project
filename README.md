@@ -150,4 +150,4 @@ Ideas for future iterations:
 
 ## 📃 License
 
-This project does not currently include a license file, which means all rights are reserved by default. If you'd like others to freely reuse or build on this code, consider adding an [MIT License](https://choosealicense.com/licenses/mit/) (or another license of your choice) to the repository.
+MIT License [MIT License](https://choosealicense.com/licenses/mit/) 
